@@ -1,0 +1,6 @@
+Minimum variable product(shopping application):
+-Can I buy different items in different shelves in one cart.
+-can I buy any different quantity of item I want from the grocery
+-can I take out some of the items from my cart.
+-It is possible to replace number of quantity of my item without changing my item 
+or change change item and quantity both.
