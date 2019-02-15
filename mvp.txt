@@ -64,4 +64,6 @@ that I have bought, maybe print lists of them out.
 ** Pricing ** As a user I would like to be able to see what I payed for an item before 
 to compare what I am paying now. 
 
-** Preferential Stores ** As a user I would like my list to tell me what store I paid less money for this product. Maybe a way to break a finished list into stores I should be shopping at.
+** Preferential Stores ** As a user I would like my list to tell me what store 
+I paid less money for this product. Maybe a way to break a finished list into stores 
+I should be shopping at.
