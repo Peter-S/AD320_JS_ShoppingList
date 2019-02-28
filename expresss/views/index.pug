@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  form (action="/data" method="post")
+  
+    label(for='name') item:
+    input(type='text', name='item')
+    br 
+    br
+    label(for='name') quantity:
+    input(type='text', name='quantity')
+    br
+    br
+    button(type='submit' ) submit
+
+  if item
+    if quantity
+          p #{item }  #{quantity}
