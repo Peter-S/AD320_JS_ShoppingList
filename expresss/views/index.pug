@@ -4,14 +4,14 @@ block content
   h1= title
   p Welcome to #{title}
   
-  form (action="/data" method="post")
+  form (method="post", action="/" )
   
     label(for='name') item:
-    input(type='text', name='item')
+    input(type='Text', name='item')
     br 
     br
     label(for='name') quantity:
-    input(type='text', name='quantity')
+    input(type='Number', name='quantity')
     br
     br
     button(type='submit' ) submit
