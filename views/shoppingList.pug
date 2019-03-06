@@ -1,18 +1,14 @@
-extends layout
-
 block content
     h1= title
     p Welcome to #{title}
 
-    form
+    form(action='/shoppingList', method='post')
         label(for='newTask') Item:
         input(id='new-task', type='text' name='newTask')
-        br
         label(for='quantity') Quantity:
         input(id='quantity', type='number', name='quantity')
-        br
         button(type='submit') Add
     
     h2 TO SHOP
-        p #{newTask}: #{quantity}
-            
+        p itam added to the List
+        p #{newTask} #{quantity}
