@@ -1,0 +1,26 @@
+extends ./layout.pug
+block content
+  .wrapper
+  header
+    img.mealticket(src='images/mealticket.png')
+  .main
+    h1.titlemain Welcome to Meal Ticket
+    h3 Grocery lists made easy 
+    p
+       form(action='/shoppingList.js', method='post')
+       label(for='newTask') Item:
+       input(id='new-task', type='text' name='newTask')
+       label(for='quantity') Quantity:
+       input(id='quantity', type='number', name='quantity')
+       button(type='submit') Add
+    p
+       p TO SHOP
+       p item added to the List
+       p #{newTask} #{quantity}
+    .a2a_kit.a2a_kit_size_32.a2a_default_style
+      a.a2a_dd(href='https://www.addtoany.com/share')
+      a.a2a_button_email
+      a.a2a_button_copy_link
+    script(async='', src='https://static.addtoany.com/menu/page.js')
+  footer
+     Group One Project
