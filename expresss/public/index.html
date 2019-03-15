@@ -1,0 +1,67 @@
+<html font color="red">
+
+<head>
+  <title>shopping view</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+      <div class="grid-container-top">
+                  <div class="item2">
+
+                  </div>
+               </div>
+               <div class="grid-container">
+                  <div class="item3">
+                    <h2>Shopping Database View</h2>
+                    <h6></h6>
+                  </div>
+               </div>
+<center>
+
+  <script>
+    $(document).ready(function(){
+
+        +$.getJSON("http://localhost:3000/api/v1/shops/all", (result)=>{
+          $.each(result, (i, field) =>      {
+
+            var title = field.ID
+             +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+              +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+
+            +"Item: "
+               + field.Item
+                 +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+                  +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+            +"Quantity: "
+             + field.Quantity
+              +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+               +'&nbsp &nbsp &nbsp &nbsp &nbsp'
+            +"Buy: "
+             + field.Buy
+          +"<button>delete</button>"
+				 +"<br /><br /> "
+               + "</div>";
+          $("#list").append(title);
+			  
+          });
+          $('.film').on('click', function(){
+            if ($(this).children('.info').is(':hidden')){
+              $('.info').hide();
+              $(this).children('.info').show();
+            } else {
+              $(this).children('.info').hide();
+            }
+          });
+        });
+      });
+  </script>
+</center>
+</head>
+
+<body font color="black">
+ 
+	<h5><font color="black"><div class="lefty" id='list' ></div></font></h5>
+</font></body>
+
+</html>

@@ -4,8 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   
-  form (method="post", action="/" )
-  
+  form 
     label(for='name') item:
     input(type='Text', name='item')
     br 
@@ -14,8 +13,7 @@ block content
     input(type='Number', name='quantity')
     br
     br
-    button(type='submit' ) submit
-
-  if item
-    if quantity
-          p #{item }  #{quantity}
+    button(type='submit' value='submit') submit
+     if item
+     if quantity
+      p #{item }  #{quantity}
