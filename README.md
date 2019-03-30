@@ -1,3 +1,2 @@
 # AD320_JS_ShoppingList
-This project about creating shopping list app. it is like online cart, you can select any item in the store and put in your shopping list, 
-it is also offering   other functionality like to return items you dont want, or add add more items.
+Shopping List was project intended  to make online shopping by select items online and it's quantity. it also  offers other functionlity which can allow you return items unwanted items or updated quantity of the items.
